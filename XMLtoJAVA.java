@@ -21,7 +21,7 @@ public class XMLToJava {
         try {
             String input = handleStringInput(Scanner scanner);;
             try {
-                File file = new File("C:\Users\E&T Comp's Lap\-tasktoo\Users.java");
+                File file = new File("C:\Users\E&T Comp's Lap\-tasktoo\Records.xml");
                 JAXBContext jaxbContext = JAXBContext.newInstance(Records.class);
                 Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
                 Records records = (Records) jaxbUnmarshaller.unmarshal(file);
